@@ -35,7 +35,7 @@ div {
   margin-bottom: auto;
 }
 
-.sub1 {
+.sectitle1 {
   float: right;
   width: 100px;
   padding: 5px;
@@ -48,7 +48,7 @@ div {
 
 }
 
-.sub2 {
+.sectitle2 {
   float: right;
   color: white;
   width: 100px;
@@ -62,7 +62,7 @@ div {
 
 }
 
-.sub3 {
+.sectitle3 {
   color: black;
   float: right;
   width: 100px;
@@ -91,15 +91,19 @@ div {
   width: 90%;
 }
 
-/*desktop version*/
-@media (min-width: 992px) {
-  .column-lg-4 {
+
+
+
+
+/* This is mobile version*/
+@media (max-width: 767px) {
+  .colmn-sm-12 {
       float: left;
-      width: 33.33%;
+      width: 100%;
   }
 }
 
-/*tablet version*/
+/*This is tablet version*/
 @media (min-width: 768px) and (max-width: 991px) {
   .colmn-md-6 {
       float: left;
@@ -109,17 +113,21 @@ div {
   }
 
   .colmn-md-12 {
-      float: left;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-  }
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 
-/*mobile version*/
-@media (max-width: 767px) {
-  .colmn-sm-12 {
+
+
+
+
+/* This is desktop version*/
+@media (min-width: 992px) {
+  .column-lg-4 {
       float: left;
-      width: 100%;
+      width: 33.33%;
   }
 }
